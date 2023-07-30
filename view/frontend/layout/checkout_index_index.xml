@@ -16,13 +16,34 @@
                                             <item name="shipping-step" xsi:type="array">
                                                 <item name="children" xsi:type="array">
                                                     <item name="shippingAddress" xsi:type="array">
+                                                        <item name="config" xsi:type="array">
+                                                            <item name="shippingMethodItemTemplate" xsi:type="string">SendCloud_SendCloud/sc-method-item-template</item>
+                                                            <item name="shippingMethodListTemplate" xsi:type="string">SendCloud_SendCloud/sc-method-list-template</item>
+                                                        </item>
                                                         <item name="children" xsi:type="array">
                                                             <item name="shippingAdditional" xsi:type="array">
                                                                 <item name="component" xsi:type="string">uiComponent</item>
                                                                 <item name="displayArea" xsi:type="string">shippingAdditional</item>
                                                                 <item name="children" xsi:type="array">
                                                                     <item name="service-point" xsi:type="array">
-                                                                        <item name="component" xsi:type="string">SendCloud_SendCloud/js/view/checkout/shipping/servicePoint</item>
+                                                                        <item name="component" xsi:type="string">SendCloud_SendCloud/js/servicePoint/view/checkout/shipping/servicePoint</item>
+                                                                    </item>
+                                                                    <item name="sendcloud-checkout" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">SendCloud_SendCloud/js/checkout/checkout</item>
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                    <item name="step-config" xsi:type="array">
+                                                        <item name="children" xsi:type="array">
+                                                            <item name="shipping-rates-validation" xsi:type="array">
+                                                                <item name="children" xsi:type="array">
+                                                                    <item name="sendcloud-rates-validation" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">SendCloud_SendCloud/js/view/shipping-rates-validation/sendcloud</item>
+                                                                    </item>
+                                                                    <item name="sendcloudcheckout-rates-validation" xsi:type="array">
+                                                                        <item name="component" xsi:type="string">SendCloud_SendCloud/js/view/shipping-rates-validation/sendcloud-checkout</item>
                                                                     </item>
                                                                 </item>
                                                             </item>

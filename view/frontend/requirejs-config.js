@@ -1,7 +1,7 @@
 var config = {
     "map": {
         "*": {
-            'Amasty_Checkout/js/model/shipping-save-processor/default': 'SendCloud_SendCloud/js/model/shipping-save-processor/amasty-servicepoint'
+            'Amasty_Checkout/js/model/shipping-save-processor/default': 'SendCloud_SendCloud/js/model/shipping-save-processor/amasty'
         }
     },
     config: {
@@ -13,7 +13,7 @@ var config = {
                 'SendCloud_SendCloud/js/mixins/checkout/view/shipping-mixin': true
             },
             'Mageplaza_Osc/js/model/shipping-save-processor/checkout': {
-                'SendCloud_SendCloud/js/model/shipping-save-processor/mageplaza-servicepoint': true
+                'SendCloud_SendCloud/js/model/shipping-save-processor/mageplaza': true
             },
             'Mageplaza_Osc/js/view/review/placeOrder': {
                 'SendCloud_SendCloud/js/mixins/view/review/placeOrder': true
@@ -29,6 +29,9 @@ var config = {
             },
             'Magento_Checkout/js/action/select-shipping-method': {
                 'SendCloud_SendCloud/js/action/select-shipping-method-mixin': true
+            },
+            'Bss_OneStepCheckout/js/model/shipping-save-processor/payload-extender': {
+                'SendCloud_SendCloud/js/model/shipping-save-processor/payload-extender-mixin': true
             }
         }
     }
